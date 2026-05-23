@@ -7,10 +7,10 @@ import requests
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# 🔥 Google Drive direct link
+# Google Drive direct link
 MODEL_URL = "https://drive.google.com/uc?id=1-EMkIIZN_A5Fif7IghXvYtcXe2uTQlVX"
 
-# 🔥 Download model once
+
 def download_model():
     if not os.path.exists("final_model.h5"):
         r = requests.get(MODEL_URL)
